@@ -77,3 +77,11 @@ Commonly used settings
 - ansible_managed: will insert the value exactly as it is specified in ansible.cfg. 
 - forks: enables paralell tasks
 - Inventory: modify where ansible looks for the inventory by default
+
+# Generate and pass ssh public key to nodes
+
+```console
+$ ssh-keygen
+
+$ ssh-copy-id <destination host>
+```
